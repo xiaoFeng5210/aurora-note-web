@@ -5,13 +5,12 @@ import { Button } from '@/components/ui/button'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div className='text-red-500'>home</div>
+    <div className='bg-primary'>
+      <div className='tw-text-red-500'>home</div>
       <Button>你好</Button>
-    </>
+    </div>
   )
 }
 
