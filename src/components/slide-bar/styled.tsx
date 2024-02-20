@@ -3,7 +3,7 @@ import Styled from 'styled-components';
 const ItemHeight = `28px`
 
 export const selectedStyle = {
-  backgroundColor: `#EDEDEB`,
+  backgroundColor: `#F2F2F1`,
   color: '#37342F'
 }
 
