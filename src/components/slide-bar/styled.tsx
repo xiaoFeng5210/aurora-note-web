@@ -4,8 +4,10 @@ const ItemHeight = `32px`
 
 export const selectedStyle = {
   backgroundColor: `#F2F2F1`,
-  color: '#37342F'
+  color: '#37342F',
+  fontWeight: 'bold'
 }
+
 export const SlideBarWrapper = Styled.ul`
 font-size: 1rem;
 width: 100%;
