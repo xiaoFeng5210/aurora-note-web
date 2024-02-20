@@ -1,5 +1,5 @@
 import { useEffect, type FC } from 'react'
-import { SlideBarItem } from './styled'
+import { SlideBarItem, selectedStyle } from './styled'
 const SlideBar: FC = () => {
   return (
     <div className='tw-w-[300px] tw-h-full tw-bg-[#FBFBFA] tw-px-2'>
