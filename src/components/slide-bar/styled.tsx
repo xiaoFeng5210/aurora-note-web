@@ -12,14 +12,22 @@ export const SlideBarWrapper = Styled.ul`
 font-size: 1rem;
 width: 100%;
 height: 100%;
-display: flex;
-flex-direction: column;
-gap: 2px;
+/* display: flex; */
+/* flex-direction: column; */
+overflow-y: auto;
+scrollbar-width: none;
+&::-webkit-scrollbar {
+  display: none;
+}
 `
 export const SlideBarItem = Styled.li`
+margin-bottom: 6px;
+width: 100%;
 padding-left: 5px;
 border-radius: 4px;
-overflow: auto; white-space: nowrap; text-overflow: ellipsis;
+overflow: hidden;
+white-space: nowrap; 
+text-overflow: ellipsis;
 height: ${ItemHeight};
 line-height: ${ItemHeight};
 &:hover {
