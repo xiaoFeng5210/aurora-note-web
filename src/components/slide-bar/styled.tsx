@@ -16,6 +16,7 @@ height: 100%;
 /* flex-direction: column; */
 overflow-y: auto;
 scrollbar-width: none;
+padding-bottom: 10px;
 &::-webkit-scrollbar {
   display: none;
 }
