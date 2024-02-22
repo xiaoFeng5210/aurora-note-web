@@ -8,6 +8,10 @@ import { variants, itemVariants, logoVariants } from './animate.tsx'
 
 const SlideBar: FC = () => {
   const currentSelectKey = useSlideBarStore((state) => state.currentSelectKey)
+  const selectContent = (item: any) => {
+    console.log(item)
+    setCurrentSelectKey(item.key)
+  }
   return (
     <div className='tw-w-[300px] tw-h-full tw-bg-[#FBFBFA] tw-px-2'>
       <header className='tw-py-2 tw-w-full tw-inline-flex tw-items-center tw-cursor-pointer'>
@@ -23,7 +27,7 @@ const SlideBar: FC = () => {
               variants={itemVariants}
               key={item.key}
               style={currentSelectKey === item.key ? selectedStyle : {}}
-              onClick={() => setCurrentSelectKey(item.key)}
+              onClick={() => selectContent(item)}
             >
               {item.title}
             </SlideBarItem>

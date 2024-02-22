@@ -113,3 +113,11 @@ export const mockData = [
     title: '测试22333333'
   },
 ]
+
+function testMock() {
+  mockData.forEach((item: any) => {
+    item.markdown = `${item.key} ${item.title} markdown content`
+  })
+}
+
+testMock()
