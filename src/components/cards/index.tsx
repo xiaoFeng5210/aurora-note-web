@@ -3,6 +3,14 @@ import { Button } from '../ui/button'
 import { motion } from 'framer-motion'
 import { variants, h1Variants, pVariants, buttonVariants } from './animate'
 import { CardsContainer } from './styled'
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
 
 const Cards: FC = () => {
   const [hasCards, setHasCards] = useState(false);
@@ -31,7 +39,24 @@ const Cards: FC = () => {
           <Tips />
           :
           <CardsContainer>
-            
+            {
+              Array(8).fill(1).map((_, index) => (
+                <Card key={index}>
+                  <CardHeader>
+                    <CardTitle>Create project</CardTitle>
+                    <CardDescription>Deploy your new project in one-click.</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <p>content...</p>
+                  </CardContent>
+                  {/* <CardFooter className="tw-flex tw-justify-between tw-items-center">
+                    <Button variant="outline">Cancel</Button>
+                    <Button>Deploy</Button>
+                  </CardFooter> */}
+                </Card>
+
+              ))
+            }
           </CardsContainer>
       }
     </div>
