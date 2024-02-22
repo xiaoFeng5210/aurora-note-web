@@ -34,3 +34,11 @@ export const buttonVariants = {
   //   scale: 1.1
   // }
 }
+
+
+export const cardVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+  }
+}

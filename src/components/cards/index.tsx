@@ -1,7 +1,7 @@
 import { useState, type FC } from 'react'
 import { Button } from '../ui/button'
 import { motion } from 'framer-motion'
-import { variants, h1Variants, pVariants, buttonVariants } from './animate'
+import { variants, h1Variants, pVariants, buttonVariants, cardVariants } from './animate'
 import { CardsContainer } from './styled'
 import {
   Card,
@@ -38,7 +38,7 @@ const Cards: FC = () => {
         hasCards ?
           <Tips />
           :
-          <CardsContainer>
+          <CardsContainer as={motion.div} variants={cardVariants} initial="hidden" animate="visible" exit="hidden" >
             {
               Array(8).fill(1).map((_, index) => (
                 <Card className='tw-cursor-pointer' key={index}>
