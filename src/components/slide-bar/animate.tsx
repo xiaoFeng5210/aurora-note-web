@@ -24,3 +24,13 @@ export const itemVariants = {
     x: 0
   }
 }
+
+export const logoVariants = {
+  hover: {
+    scale: 1.2,
+    rotate: 90,
+  },
+  tap: {
+    scale: 1.1,
+  }
+}
