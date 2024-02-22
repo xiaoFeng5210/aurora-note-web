@@ -28,9 +28,14 @@ export const itemVariants = {
 export const logoVariants = {
   hover: {
     scale: 1.2,
-    rotate: 90,
+    transition: {
+      // type: "spring",
+      // stiffness: 260,
+      // damping: 200,
+    }
   },
   tap: {
-    scale: 1.1,
+    scale: 1,
+    opacity: 0.5
   }
 }
