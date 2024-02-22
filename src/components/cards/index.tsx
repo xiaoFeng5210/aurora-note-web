@@ -41,7 +41,7 @@ const Cards: FC = () => {
           <CardsContainer>
             {
               Array(8).fill(1).map((_, index) => (
-                <Card key={index}>
+                <Card className='tw-cursor-pointer' key={index}>
                   <CardHeader>
                     <CardTitle>Create project</CardTitle>
                     <CardDescription>Deploy your new project in one-click.</CardDescription>
@@ -54,7 +54,6 @@ const Cards: FC = () => {
                     <Button>Deploy</Button>
                   </CardFooter> */}
                 </Card>
-
               ))
             }
           </CardsContainer>
