@@ -19,7 +19,7 @@ const Cards: FC = () => {
   }
 
   const Tips = () => (
-    <motion.div variants={variants} animate="visible" initial="hidden" exit="hidden" className=''>
+    <motion.div variants={variants} animate="visible" initial="hidden" exit="hidden" className='tw-w-full tw-h-full tw-inline-flex tw-flex-col tw-items-center tw-justify-center'>
       <motion.h1 variants={h1Variants} className='tw-text-4xl tw-mb-4'>👏欢迎开始使用极光小记～</motion.h1>
       <motion.div variants={pVariants} className='tw-mb-4 tw-font-[Helvetica]'>
         <motion.p>轻松记录您的想法, 灵感, 知识</motion.p>

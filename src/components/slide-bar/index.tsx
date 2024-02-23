@@ -48,7 +48,6 @@ const SlideBar: FC<SlideBarProps> = () => {
           </motion.div>
         )
       }
-
     </AnimatePresence>
 
   )
