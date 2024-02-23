@@ -12,12 +12,13 @@ interface SlideBarProps {
 
 const SlideBar: FC<SlideBarProps> = () => {
   const currentSelectKey = useSlideBarStore((state) => state.currentSelectKey)
+  const isShoSlidebar = useSlideBarStore((state) => state.isShowSlideBar)
   const selectContent = (item: any) => {
     setCurrentSelectKey(item.key)
   }
 
   return (
-    <motion.div variants={ComponentVariants} animate={""} className='tw-w-[300px] tw-h-full tw-bg-[#FBFBFA] tw-px-2'>
+    <motion.div variants={ComponentVariants} animate={isShoSlidebar ? "visible" : "hidden"} className='tw-w-[300px] tw-h-full tw-bg-[#FBFBFA] tw-px-2'>
       <header className='tw-py-2 tw-w-full tw-inline-flex tw-items-center tw-cursor-pointer'>
         <motion.img variants={logoVariants} whileHover="hover" whileTap="tap" src="/img/aurora_logo_main.png" alt="" width="50px" />
         <span className='tw-ml-2 tw-text-[#6B6A66] tw-text-[1.3rem] tw-font-bold'>Aurora Note</span>
