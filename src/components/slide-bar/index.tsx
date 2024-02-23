@@ -9,7 +9,6 @@ import { variants, itemVariants, logoVariants } from './animate.tsx'
 const SlideBar: FC = () => {
   const currentSelectKey = useSlideBarStore((state) => state.currentSelectKey)
   const selectContent = (item: any) => {
-    console.log(item)
     setCurrentSelectKey(item.key)
   }
   return (
