@@ -3,6 +3,7 @@ import { Button } from '../ui/button'
 import { motion } from 'framer-motion'
 import { variants, h1Variants, pVariants, buttonVariants, cardVariants } from './animate'
 import { CardsContainer } from './styled'
+import { useNavigate } from 'react-router-dom'
 import {
   Card,
   CardContent,
@@ -13,9 +14,10 @@ import {
 } from "@/components/ui/card"
 
 const Cards: FC = () => {
+  const navigate = useNavigate();
   const [hasCards, setHasCards] = useState(false);
   const add = () => {
-    
+    navigate('/add')
   }
 
   const Tips = () => (
