@@ -1,3 +1,3 @@
-import { setCurrentSelectKey, useSlideBarStore } from './slide'
+import { setCurrentSelectKey, useSlideBarStore, setIsShowSlideBar } from './slide'
 
-export { setCurrentSelectKey, useSlideBarStore }
+export { setCurrentSelectKey, setIsShowSlideBar, useSlideBarStore }
