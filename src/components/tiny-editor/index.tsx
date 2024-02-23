@@ -5,7 +5,12 @@ interface TinyMceEditorProps {
   onInit?: () => void
 }
 
-const TinyMceEditor: FC = forwardRef<TinyMceEditorProps, any>(({ onInit }) => {
+const TinyMceEditor: FC = forwardRef<TinyMceEditorProps, any>(({ onInit }, ref) => {
+
+  const getCursorLocation = (editor: any) => {
+    const cursorPos = editor.selection.getRng()
+    console.log(cursorPos)
+  }
 
   return (
     <Editor
@@ -15,6 +20,7 @@ const TinyMceEditor: FC = forwardRef<TinyMceEditorProps, any>(({ onInit }) => {
         if (editorDom) {
           editorDom.style.border = 'none'
         }
+        getCursorLocation(editor)
         editor.focus()
         onInit && onInit()
       }}
