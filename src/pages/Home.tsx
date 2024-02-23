@@ -9,9 +9,13 @@ const Home: FC = () => {
   return (
     <div className='tw-w-screen tw-h-dvh tw-overflow-hidden tw-flex tw-flex-row'>
       <SlideBar />
-      <motion.main layout className='tw-flex-1 tw-p-4 tw-flex tw-flex-col'>
-        <Outlet />
-      </motion.main>
+      <main className="tw-flex-1">
+        
+        <motion.div layout className='tw-p-4'>
+          <Outlet />
+        </motion.div>
+      </main>
+
     </div>
   )
 }
