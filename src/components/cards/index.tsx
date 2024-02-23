@@ -15,7 +15,7 @@ import {
 const Cards: FC = () => {
   const [hasCards, setHasCards] = useState(false);
   const add = () => {
-    setHasCards(false)
+    
   }
 
   const Tips = () => (
