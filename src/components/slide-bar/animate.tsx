@@ -39,3 +39,16 @@ export const logoVariants = {
     opacity: 0.5
   }
 }
+
+export const foldVariants = {
+  visible: {
+    opacity: 1
+  },
+  tap: {
+    opacity: 0.7,
+    scale: 0.9
+  },
+  hidden: {
+    opacity: 0
+  }
+}

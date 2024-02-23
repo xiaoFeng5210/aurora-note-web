@@ -35,7 +35,7 @@ const Cards: FC = () => {
   return (
     <div className='tw-w-full tw-h-full tw-flex tw-justify-center tw-items-center'>
       {
-        hasCards ?
+        !hasCards ?
           <Tips />
           :
           <CardsContainer as={motion.div} variants={cardVariants} initial="hidden" animate="visible" exit="hidden" >
