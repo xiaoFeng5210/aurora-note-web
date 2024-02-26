@@ -15,7 +15,7 @@ import {
 
 const Cards: FC = () => {
   const navigate = useNavigate();
-  const [hasCards, setHasCards] = useState(true);
+  const [hasCards, setHasCards] = useState(false);
   const add = () => {
     navigate('/add')
   }

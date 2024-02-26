@@ -1,7 +1,7 @@
 import { useContext, type FC } from 'react'
 import { SlideBarItem, selectedStyle, SlideBarWrapper } from './styled'
 import { useSlideBarStore, setCurrentSelectKey, setIsShowSlideBar } from '../../store'
-import { Button } from "@/components/ui/button"
+import { Skeleton } from "@/components/ui/skeleton"
 import { mockData } from './mock.ts'
 import { motion, AnimatePresence } from "framer-motion"
 import { variants, itemVariants, logoVariants, foldVariants, ComponentVariants } from './animate.tsx'
@@ -49,7 +49,7 @@ const SlideBar: FC<SlideBarProps> = () => {
         )
       }
     </AnimatePresence>
-
   )
+
 }
 export default SlideBar
