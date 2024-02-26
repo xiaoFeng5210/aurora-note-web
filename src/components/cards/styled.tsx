@@ -17,16 +17,6 @@ export const CardsContainer =  styled.div`
   gap: .5rem;
   /* 滚动条样式消失 */
   scrollbar-width: none;
-
-  &::before {
-    display: block;
-    top: 0px;
-    content: '';
-    width: auto;
-    height: 15px;
-    /* opacity: 0; */
-    background-color: red;
-  }
 `
 
 
