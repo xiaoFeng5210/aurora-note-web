@@ -15,7 +15,7 @@ import {
 
 const Cards: FC = () => {
   const navigate = useNavigate();
-  const [hasCards, setHasCards] = useState(false);
+  const [hasCards, setHasCards] = useState(true);
   const add = () => {
     navigate('/add')
   }
@@ -43,7 +43,7 @@ const Cards: FC = () => {
           <CardsContainer as={motion.div} variants={cardVariants} initial="hidden" animate="visible" exit="hidden" >
             {
               Array(8).fill(1).map((_, index) => (
-                <Card className='tw-cursor-pointer' key={index}>
+                <Card className='tw-cursor-pointer tw-max-w-[620px] tw-min-w-[320px] tw-w-full' key={index}>
                   <CardHeader>
                     <CardTitle>Create project</CardTitle>
                     <CardDescription>Deploy your new project in one-click.</CardDescription>
