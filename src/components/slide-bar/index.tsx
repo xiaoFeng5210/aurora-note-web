@@ -22,7 +22,8 @@ const SlideBar: FC<SlideBarProps> = () => {
     <AnimatePresence>
       {
         isShowSlideBar && (
-          <motion.div variants={ComponentVariants} animate="visible" initial="hide" exit="hide" className='tw-w-[300px] tw-h-full tw-bg-[#FBFBFA] tw-px-2'>
+          <motion.div variants={ComponentVariants} animate="visible" initial="hide" exit="hide"
+            className='tw-w-[300px] tw-h-full tw-bg-[#FBFBFA] tw-px-2'>
             <header onMouseEnter={() => {
               setIsShowLeftToLine(true);
             }} onMouseLeave={() => setIsShowLeftToLine(false)} className='tw-py-2 tw-w-full tw-inline-flex tw-items-center tw-cursor-pointer'>
@@ -31,7 +32,8 @@ const SlideBar: FC<SlideBarProps> = () => {
                 style={{ color: isShowLeftToLine ? '#747BFF' : '#6B6A66' }}>Aurora Note</span>
               {
                 isShowLeftToLine && (
-                  <motion.span onClick={() => setIsShowSlideBar(false)} variants={foldVariants} initial="visible" exit="hidden" whileTap="tap" className='tw-ml-auto'>
+                  <motion.span onClick={() => setIsShowSlideBar(false)}
+                    variants={foldVariants} initial="visible" exit="hidden" whileTap="tap" className='tw-ml-auto'>
                     <ArrowLeftToLine color="#9A9996" />
                   </motion.span>
                 )
