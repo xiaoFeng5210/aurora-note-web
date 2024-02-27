@@ -54,7 +54,7 @@ export const foldVariants = {
 }
 
 export const ComponentVariants = {
-  hidden: {
+  hide: {
     opacity: 0,
     x: '-100%',
     transition: {

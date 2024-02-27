@@ -9,7 +9,7 @@ const Home: FC = () => {
   useEffect(() => {
     navigate('/home')
   }, [])
-  
+
   return (
     <div className='tw-w-screen tw-h-dvh tw-overflow-hidden tw-flex tw-flex-row'>
       <SlideBar />
