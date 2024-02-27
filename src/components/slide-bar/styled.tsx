@@ -36,3 +36,7 @@ line-height: ${ItemHeight};
   cursor: pointer;
 }
 `
+
+export const WebTitle = Styled.span`
+
+`
