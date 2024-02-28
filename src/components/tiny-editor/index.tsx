@@ -20,9 +20,9 @@ const TinyMceEditor: FC = forwardRef<TinyMceEditorProps, any>(({ onInit }, ref) 
         if (editorDom) {
           editorDom.style.border = 'none'
         }
+        onInit && onInit()
         getCursorLocation(editor)
         editor.focus()
-        onInit && onInit()
       }}
       initialValue="<h3>新建小记...</h3>"
       init={{
